@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>zakerya • GitHub Profile</title>
+  <meta name="color-scheme" content="dark light" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #121833;
+      --text: #e6e8ee;
+      --muted: #a7b0c3;
+      --ring: #3b82f6;
+    }
+    * { box-sizing: border-box; }
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(59,130,246,.25), transparent),
+                  radial-gradient(1000px 500px at 90% -10%, rgba(147,51,234,.16), transparent),
+                  var(--bg);
+      color: var(--text);
+    }
+    .wrap{ max-width: 1100px; margin: 0 auto; padding: 32px 20px 56px; }
+    header{ display:flex; align-items:center; gap:16px; margin-bottom: 24px; }
+    .avatar{ width:56px; height:56px; border-radius:50%; border:2px solid rgba(255,255,255,.1); box-shadow: 0 0 0 4px rgba(59,130,246,.25); }
+    h1{ font-size: clamp(24px, 3.5vw, 36px); margin:0; letter-spacing:.2px; }
+    p.tag{ margin: 2px 0 0; color: var(--muted); }
+    section{ background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.06); border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); margin: 18px 0; }
+    section h2{ margin: 0 0 14px; font-size: clamp(18px, 2.4vw, 22px); }
+
+    /* badges */
+    .badges{ display:flex; flex-wrap: wrap; gap:10px; }
+    .badges img{ height:28px; border-radius: 8px; display:block; }
+
+    /* stats */
+    .stats{ display:grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 820px){ .stats{ grid-template-columns: repeat(3, 1fr); } }
+    .stats img, .trophy img{ width:100%; height:auto; border-radius: 14px; border:1px solid rgba(255,255,255,.08); background:#0a0f22; }
+
+    .trophy{ display:block; }
+
+    a.btn{
+      display:inline-flex; align-items:center; gap:8px; text-decoration:none; color: #0b1020; background:#60a5fa;
+      padding:10px 14px; border-radius: 999px; font-weight: 600; border: 1px solid rgba(0,0,0,.15);
+      box-shadow: 0 6px 16px rgba(59,130,246,.35);
+    }
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Optional: replace the avatar URL with your GitHub avatar or remove the <img> entirely -->
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="GitHub logo avatar" loading="lazy" />
+      <div>
+        <h1>Muhammad Zakerya Munawar</h1>
+        <p class="tag">Developer • Building in C/C++, Python, JS and more</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/zakerya" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+        </div>
+      </div>
+    </header>
+
+    <section aria-labelledby="techstack">
+      <h2 id="techstack">💻 Tech Stack</h2>
+      <div class="badges">
+        <img alt="C" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" loading="lazy" />
+        <img alt="C++" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" loading="lazy" />
+        <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" loading="lazy" />
+        <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" loading="lazy" />
+        <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" loading="lazy" />
+        <img alt="PHP" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" loading="lazy" />
+        <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" loading="lazy" />
+        <img alt="Python" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" loading="lazy" />
+        <img alt="Windows Terminal" src="https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white" loading="lazy" />
+        <img alt=".NET" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" loading="lazy" />
+        <img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" loading="lazy" />
+        <img alt="NodeJS" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" loading="lazy" />
+        <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" loading="lazy" />
+        <img alt="WordPress" src="https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white" loading="lazy" />
+        <img alt="MySQL" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" loading="lazy" />
+        <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" loading="lazy" />
+        <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" loading="lazy" />
+        <img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" loading="lazy" />
+        <img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" loading="lazy" />
+      </div>
+    </section>
+
+    <section aria-labelledby="stats">
+      <h2 id="stats">📊 GitHub Stats</h2>
+      <div class="stats">
+        <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=zakerya&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false" loading="lazy" />
+        <img alt="GitHub Streak" src="https://nirzak-streak-stats.vercel.app/?user=zakerya&theme=tokyonight&hide_border=false" loading="lazy" />
+        <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zakerya&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact" loading="lazy" />
+      </div>
+    </section>
+
+    <section aria-labelledby="trophies">
+      <h2 id="trophies">🏆 GitHub Trophies</h2>
+      <a class="trophy" href="https://github.com/ryo-ma/github-profile-trophy" target="_blank" rel="noopener noreferrer">
+        <img alt="GitHub Trophies" src="https://github-profile-trophy.vercel.app/?username=zakerya&theme=radical&no-frame=false&no-bg=false&margin-w=4" loading="lazy" />
+      </a>
+    </section>
+
+    <section aria-labelledby="notes">
+      <h2 id="notes">ℹ️ Notes</h2>
+      <p class="muted">This page shows live badges pulled from third‑party services (shields.io, Vercel readme stats, profile trophy). If any image fails to load, try refreshing or check the service status.</p>
+    </section>
+  </div>
+</body>
+</html>
